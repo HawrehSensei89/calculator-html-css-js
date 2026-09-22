@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Font;
+    src: url("/assets/fonts/RobotoMono-Bold.ttf") format("TrueType");
+}
+
+body {
+    background: #0f0f25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Font;
+    height: 100vh;
+}
+
+
+
+.container {
+    width: 220px;
+    height: 19rem;
+    background: linear-gradient(to bottom right, #272727, #02021b 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #020222;
+
+}
+
+.Output {
+    color: #8b8bfc;
+    padding: 20px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+
+.buttons {
+    margin-bottom: 0px;
+}
+
+.buttons button {
+    border: none;
+    padding: 8px 12px;
+    margin: 5px auto;
+    cursor: pointer;
+    width: 40px;
+    border-radius: 10px;
+    font-family: Font;
+}
+
+.culmn-1,
+.culmn-2,
+.culmn-3,
+.culmn-4,
+.culmn-5 {
+    display: flex;
+    gap: 10px;
+
+}
+
+
+.culmn-1 button,
+.culmn-2 button,
+.culmn-3 button,
+.culmn-4 button,
+.culmn-5 button {
+    
+    box-shadow: 3px 4px 12px #292a52;
+    transition: all 0.3s;
+
+    &:hover {
+        box-shadow: 3px 4px 12px #532dcf96;
+    }
+}
+
+
+
+.culmn-1 button,
+.culmn-2 button:last-child,
+.culmn-3 button:last-child,
+.culmn-4 button:last-child,
+.culmn-5 button:last-child {
+    background: #b9b9f5;
+}
+
+
+/* dark mode and light mode buttons */
+
+.dark-light-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 6px;
+    border-radius: 10px;
+    background: #27278d;
+    box-shadow: 3px 4px 12px #292a52;
+    transition: all 0.4s;
+
+    &:hover {
+        box-shadow: 3px 4px 12px #532dcf96;
+    }
+
+}
+
+
+.dark-light-btn a {
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.4s;
+    padding: 8px 8px;
+}
+
+.dark-light-btn a:hover {
+    background: #6f6ffc;
+}
