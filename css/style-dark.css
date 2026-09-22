@@ -34,6 +34,7 @@ body {
 }
 
 .Output {
+    overflow-x: auto;
     color: #8b8bfc;
     padding: 20px;
     height: 30px;
@@ -41,6 +42,7 @@ body {
     display: flex;
     justify-content: end;
     align-items: center;
+    user-select: none;
 }
 
 
@@ -77,6 +79,7 @@ body {
     
     box-shadow: 3px 4px 12px #292a52;
     transition: all 0.3s;
+    user-select: none;
 
     &:hover {
         box-shadow: 3px 4px 12px #532dcf96;
