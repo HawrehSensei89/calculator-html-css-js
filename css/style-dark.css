@@ -80,6 +80,7 @@ body {
 
     &:hover {
         box-shadow: 3px 4px 12px #532dcf96;
+        transform: translateY(-3px);
     }
 }
 
